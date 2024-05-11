@@ -1,0 +1,49 @@
+% !TEX program = xelatex
+\documentclass[10pt]{article}
+\usepackage[UTF8]{ctex}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\hypersetup{colorlinks=true, linkcolor=blue, filecolor=magenta, urlcolor=cyan,}
+\urlstyle{same}
+
+\title{How to write a good scientific paper - Chris A. Mark}
+
+\date{}
+
+
+% %New command to display footnote whose markers will always be hidden
+% \let\svthefootnote\thefootnote
+% \newcommand\blfootnotetext[1]{%
+%   \let\thefootnote\relax\footnote{#1}%
+%   \addtocounter{footnote}{-1}%
+%   \let\thefootnote\svthefootnote%
+% }
+
+% %Overriding the \footnotetext command to hide the marker if its value is `0`
+% \let\svfootnotetext\footnotetext
+% \renewcommand\footnotetext[2][?]{%
+%   \if\relax#1\relax%
+%     \ifnum\value{footnote}=0\blfootnotetext{#2}\else\svfootnotetext{#2}\fi%
+%   \else%
+%     \if?#1\ifnum\value{footnote}=0\blfootnotetext{#2}\else\svfootnotetext{#2}\fi%
+%     \else\svfootnotetext[#1]{#2}\fi%
+%   \fi
+% }
+
+\begin{document}
+\maketitle
+
+\input{body_translated_final.tex}
+
+
+\end{document}
